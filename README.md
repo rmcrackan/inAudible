@@ -18,7 +18,12 @@ compilation errors were manually corrected. Nothing of substance was
 changed.
 
 ## Installers
-[add download links]
+
+* [Windows installer][windowsInstaller]: This is the original installer which
+was the origin of the source code in this github repository.
+* [Mac installer][macInstaller]: This is NOT from the code here. It is the
+version on torrenting sites. I make no claims about it but it does seem to
+also be a UI wrapper around the ffmpeg library which does the heavy lifting.
 
 ## Licensing
 This is a direct technical extract of inAudible as it exists on torrent
@@ -27,3 +32,6 @@ includes about inAudible itself or about the libraries it uses. If you
 know of anywhere that this library violates someone's licensing or if a
 license should be included, please let me know and I will attempt to
 correct it.
+
+  [windowsInstaller]: https://github.com/rmcrackan/inAudible/blob/master/_installers/inAudible197.zip
+  [macInstaller]: https://github.com/rmcrackan/inAudible/blob/master/_installers/mac_inAudible009.zip
