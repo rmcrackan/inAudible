@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Program Files (x86)\inAudible197\inAudible.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B02746C5-34D2-4F92-B76D-104431E667E1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>inAudible</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>2</WarningLevel>
+    <CodeAnalysisRuleSet>inAudible.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>inAudible.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CustomMarshalers" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="AudioSoundEditor">
+      <HintPath>lib\AudioSoundEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="AeroWizard">
+      <HintPath>lib\AeroWizard.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="taglib-sharp">
+      <HintPath>lib\taglib-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="CustomScrollBar">
+      <HintPath>lib\CustomScrollBar.dll</HintPath>
+    </Reference>
+    <Reference Include="SmartThreadPool">
+      <HintPath>lib\SmartThreadPool.dll</HintPath>
+    </Reference>
+    <Reference Include="CUETools.Ripper">
+      <HintPath>lib\CUETools.Ripper.dll</HintPath>
+    </Reference>
+    <Reference Include="CUETools.Ripper.SCSI">
+      <HintPath>lib\CUETools.Ripper.SCSI.dll</HintPath>
+    </Reference>
+    <Reference Include="DirectShowLib-2005">
+      <HintPath>lib\DirectShowLib-2005.dll</HintPath>
+    </Reference>
+    <Reference Include="INIFileParser">
+      <HintPath>lib\INIFileParser.dll</HintPath>
+    </Reference>
+    <Reference Include="ProgressODoom">
+      <HintPath>lib\ProgressODoom.dll</HintPath>
+    </Reference>
+    <Reference Include="RichTextBoxLinks">
+      <HintPath>lib\RichTextBoxLinks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell">
+      <HintPath>lib\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Mp4Chapters">
+      <HintPath>lib\Mp4Chapters.dll</HintPath>
+    </Reference>
+    <Reference Include="CUETools.CDImage">
+      <HintPath>lib\CUETools.CDImage.dll</HintPath>
+    </Reference>
+    <Reference Include="CUETools.AccurateRip">
+      <HintPath>lib\CUETools.AccurateRip.dll</HintPath>
+    </Reference>
+    <Reference Include="CUETools.Codecs">
+      <HintPath>lib\CUETools.Codecs.dll</HintPath>
+    </Reference>
+    <Reference Include="CUETools.CTDB">
+      <HintPath>lib\CUETools.CTDB.dll</HintPath>
+    </Reference>
+    <Reference Include="CUETools.Codecs.FLAKE">
+      <HintPath>lib\CUETools.Codecs.FLAKE.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web" />
+    <Reference Include="Ripper">
+      <HintPath>lib\Ripper.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LibMp3Lame.cs" />
+    <Compile Include="LibMp3LameException.cs" />
+    <Compile Include="AutoItX3Lib\AutoItX3.cs" />
+    <Compile Include="AutoItX3Lib\IAutoItX3.cs" />
+    <Compile Include="VCDAPILib\Api.cs" />
+    <Compile Include="VCDAPILib\IApi.cs" />
+    <Compile Include="iTunesLib\iTunesApp.cs" />
+    <Compile Include="iTunesLib\IiTunes.cs" />
+    <Compile Include="iTunesLib\IITSourceCollection.cs" />
+    <Compile Include="iTunesLib\IITSource.cs" />
+    <Compile Include="iTunesLib\IITPlaylistCollection.cs" />
+    <Compile Include="iTunesLib\IITPlaylist.cs" />
+    <Compile Include="iTunesLib\IITLibraryPlaylist.cs" />
+    <Compile Include="iTunesLib\IITOperationStatus.cs" />
+    <Compile Include="iTunesLib\IITTrackCollection.cs" />
+    <Compile Include="iTunesLib\IITTrack.cs" />
+    <Compile Include="iTunesLib\ITTrackKind.cs" />
+    <Compile Include="iTunesLib\IITFileOrCDTrack.cs" />
+    <Compile Include="iTunesLib\IITUserPlaylist.cs" />
+    <Compile Include="iTunesLib\_IiTunesEvents_Event.cs" />
+    <Compile Include="iTunesLib\IITObject.cs" />
+    <Compile Include="iTunesLib\_IiTunesEvents.cs" />
+    <Compile Include="CustomControls\FormOpenFileDialog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\OS\WINDOWINFO.cs" />
+    <Compile Include="CustomControls\OS\POINT.cs" />
+    <Compile Include="CustomControls\OS\RECT.cs" />
+    <Compile Include="CustomControls\OS\WINDOWPOS.cs" />
+    <Compile Include="CustomControls\OS\NCCALCSIZE_PARAMS.cs" />
+    <Compile Include="CustomControls\OS\NMHDR.cs" />
+    <Compile Include="CustomControls\OS\OFNOTIFY.cs" />
+    <Compile Include="CustomControls\OS\SWP_Flags.cs" />
+    <Compile Include="CustomControls\OS\DialogChangeStatus.cs" />
+    <Compile Include="CustomControls\OS\DialogChangeProperties.cs" />
+    <Compile Include="CustomControls\OS\ImeNotify.cs" />
+    <Compile Include="CustomControls\OS\FolderViewMode.cs" />
+    <Compile Include="CustomControls\OS\DefaultViewType.cs" />
+    <Compile Include="CustomControls\OS\ButtonStyle.cs" />
+    <Compile Include="CustomControls\OS\ZOrderPos.cs" />
+    <Compile Include="CustomControls\OS\StaticControlStyles.cs" />
+    <Compile Include="CustomControls\OS\ComboBoxStyles.cs" />
+    <Compile Include="CustomControls\OS\WindowStyles.cs" />
+    <Compile Include="CustomControls\OS\WindowExStyles.cs" />
+    <Compile Include="CustomControls\OS\ChildFromPointFlags.cs" />
+    <Compile Include="CustomControls\OS\HitTest.cs" />
+    <Compile Include="CustomControls\OS\Msg.cs" />
+    <Compile Include="CustomControls\OS\SetWindowPosFlags.cs" />
+    <Compile Include="CustomControls\OS\Win32.cs" />
+    <Compile Include="CustomControls\Controls\OpenFileDialogEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\Controls\AddonWindowLocation.cs" />
+    <Compile Include="CustomControls\Controls\ControlsID.cs" />
+    <Compile Include="SoundEditor\FormSpeech.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoundEditor\FormOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoundEditor\FormExport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoundEditor\FormVolumeAutomation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoundEditor\FormSlidingWaveTone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoundEditor\FormWaveTone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoundEditor\FormWaveformSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoundEditor\FormVocalRemoval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoundEditor\FormPitch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoundEditor\FormFilters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoundEditor\FormDeClick.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoundEditor\FormRemoveSilence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoundEditor\FormHostVstEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoundEditor\FormEqualizer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoundEditor\FormBalance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoundEditor\BALANCE_PARAMETERS.cs" />
+    <Compile Include="SoundEditor\FormRawCodecSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoundEditor\FormNormalize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoundEditor\FormCompositeWaveTone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoundEditor\FormVolume.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoundEditor\FormDtmfTones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoundEditor\FormBassBoost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoundEditor\FormWavesReverb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoundEditor\FormNoise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoundEditor\FormTempoRate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoundEditor\FormDeHiss.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoundEditor\FormBinauralWaveTone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoundEditor\FormSilence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoundEditor\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoundEditor\BASSBOOST_PARAMETERS.cs" />
+    <Compile Include="SoundEditor\DSP_EDITOR_WINDOW_INFO.cs" />
+    <Compile Include="SoundEditor\FormChooseBackgroundFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoundEditor\FormACMCodecs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inwards\Utilities.cs" />
+    <Compile Include="ExtendedComponents\Scroller.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AudibleConvertor\Program.cs" />
+    <Compile Include="AudibleConvertor\FormMP3Joiner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AudibleConvertor\frmAdvancedOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AudibleConvertor\FormAudibleDownloader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AudibleConvertor\BARD.cs" />
+    <Compile Include="AudibleConvertor\LameOptions.cs" />
+    <Compile Include="AudibleConvertor\Lame.cs" />
+    <Compile Include="AudibleConvertor\EncodingOptions.cs" />
+    <Compile Include="AudibleConvertor\SourceAudio.cs" />
+    <Compile Include="AudibleConvertor\SourcePCM.cs" />
+    <Compile Include="AudibleConvertor\VirtualWAV.cs" />
+    <Compile Include="AudibleConvertor\OpusOptions.cs" />
+    <Compile Include="AudibleConvertor\OggOptions.cs" />
+    <Compile Include="AudibleConvertor\JobProgress.cs" />
+    <Compile Include="AudibleConvertor\frmMetaDataGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AudibleConvertor\frmEditChapters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AudibleConvertor\FormWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AudibleConvertor\FormRenamer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AudibleConvertor\FormMetaData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AudibleConvertor\frmCDrip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AudibleConvertor\MimeType.cs" />
+    <Compile Include="AudibleConvertor\BatchFiles.cs" />
+    <Compile Include="AudibleConvertor\AAXMetaData.cs" />
+    <Compile Include="AudibleConvertor\NFO.cs" />
+    <Compile Include="AudibleConvertor\Audible.cs" />
+    <Compile Include="AudibleConvertor\AdvancedSplitting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AudibleConvertor\BASSBOOST_PARAMETERS.cs" />
+    <Compile Include="AudibleConvertor\DSP_EDITOR_WINDOW_INFO.cs" />
+    <Compile Include="AudibleConvertor\FormLHR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AudibleConvertor\WizardOptions.cs" />
+    <Compile Include="AudibleConvertor\FormDownloadManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AudibleConvertor\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AudibleConvertor\AdvancedOptions.cs" />
+    <Compile Include="AudibleConvertor\M4BOptions.cs" />
+    <Compile Include="AudibleConvertor\DecryptAAOptions.cs" />
+    <Compile Include="AudibleConvertor\DecryptAAXOptions.cs" />
+    <Compile Include="AudibleConvertor\AAXDecrypterOptions.cs" />
+    <Compile Include="AudibleConvertor\InAudible.cs" />
+    <Compile Include="AudibleConvertor\ComboboxItem.cs" />
+    <Compile Include="AudibleConvertor\RichTextBoxExtensions.cs" />
+    <Compile Include="AudibleConvertor\Codec.cs" />
+    <Compile Include="AudibleConvertor\SupportLibraries.cs" />
+    <Compile Include="AudibleConvertor\FormBardAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AudibleConvertor\BoyerMooreBinarySearch.cs" />
+    <Compile Include="AudibleConvertor\AudibleGraph.cs" />
+    <Compile Include="AudibleConvertor\LOG_TYPE.cs" />
+    <Compile Include="AudibleConvertor\CLog.cs" />
+    <Compile Include="AudibleConvertor\CEventlog.cs" />
+    <Compile Include="AudibleConvertor\FormBatchEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AudibleConvertor\FormTagEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AudibleConvertor\DownloadCache.cs" />
+    <Compile Include="AudibleConvertor\CoverArt.cs" />
+    <Compile Include="AudibleConvertor\iTunes.cs" />
+    <Compile Include="AudibleConvertor\DriveList.cs" />
+    <Compile Include="AudibleConvertor\ProgressMeter.cs" />
+    <Compile Include="AudibleConvertor\FormAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AudibleConvertor\AudioVisualizationService.cs" />
+    <Compile Include="AudibleConvertor\FormOverdrive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AudibleConvertor\FormOutputPath.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AudibleConvertor\FormChapterAligner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AudibleConvertor\RenameList.cs" />
+    <Compile Include="AudibleConvertor\AdjustFile.cs" />
+    <Compile Include="AudibleConvertor\JobStatus.cs" />
+    <Compile Include="AudibleConvertor\DataGridViewProgressColumn.cs" />
+    <Compile Include="AudibleConvertor\DataGridViewProgressCell.cs" />
+    <Compile Include="AudibleConvertor\FormCDripCUE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AudibleConvertor\FormChapterNames.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AudibleConvertor\ChapterList.cs" />
+    <Compile Include="AudibleConvertor\FileShellExtension.cs" />
+    <Compile Include="AudibleConvertor\MP3Header.cs" />
+    <Compile Include="AudibleConvertor\Overdrive.cs" />
+    <Compile Include="AudibleConvertor\FormMP3Import.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AudibleConvertor\Properties\Settings.cs" />
+    <Compile Include="AudibleConvertor\Properties\Resources.cs" />
+    <Compile Include="Ionic\Utils\FolderBrowserDialogEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ionic\Utils\PInvoke.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="_GLOBALS.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AudibleConvertor\AdvancedSplitting.resx" />
+    <EmbeddedResource Include="AudibleConvertor\AudioEditor\FormDtmfTones.resx" />
+    <EmbeddedResource Include="AudibleConvertor\AudioEditor\FormEqualizer.resx" />
+    <EmbeddedResource Include="AudibleConvertor\AudioEditor\FormExport.resx" />
+    <EmbeddedResource Include="AudibleConvertor\AudioEditor\FormFilters.resx" />
+    <EmbeddedResource Include="AudibleConvertor\AudioEditor\FormHostVstEditor.resx" />
+    <EmbeddedResource Include="AudibleConvertor\AudioEditor\FormMain.resx" />
+    <EmbeddedResource Include="AudibleConvertor\AudioEditor\FormNoise.resx" />
+    <EmbeddedResource Include="AudibleConvertor\AudioEditor\FormNormalize.resx" />
+    <EmbeddedResource Include="AudibleConvertor\AudioEditor\FormOptions.resx" />
+    <EmbeddedResource Include="AudibleConvertor\AudioEditor\FormPitch.resx" />
+    <EmbeddedResource Include="AudibleConvertor\AudioEditor\FormRawCodecSettings.resx" />
+    <EmbeddedResource Include="AudibleConvertor\AudioEditor\FormRemoveSilence.resx" />
+    <EmbeddedResource Include="AudibleConvertor\AudioEditor\FormSilence.resx" />
+    <EmbeddedResource Include="AudibleConvertor\AudioEditor\FormSlidingWaveTone.resx" />
+    <EmbeddedResource Include="AudibleConvertor\AudioEditor\FormSpeech.resx" />
+    <EmbeddedResource Include="AudibleConvertor\AudioEditor\FormTempoRate.resx" />
+    <EmbeddedResource Include="AudibleConvertor\AudioEditor\FormVocalRemoval.resx" />
+    <EmbeddedResource Include="AudibleConvertor\AudioEditor\FormVolume.resx" />
+    <EmbeddedResource Include="AudibleConvertor\AudioEditor\FormVolumeAutomation.resx" />
+    <EmbeddedResource Include="AudibleConvertor\AudioEditor\FormWaveformSettings.resx" />
+    <EmbeddedResource Include="AudibleConvertor\AudioEditor\FormWavesReverb.resx" />
+    <EmbeddedResource Include="AudibleConvertor\AudioEditor\FormWaveTone.resx" />
+    <EmbeddedResource Include="AudibleConvertor\Form1.resx" />
+    <EmbeddedResource Include="AudibleConvertor\FormAbout.resx" />
+    <EmbeddedResource Include="AudibleConvertor\FormAudibleDownloader.resx" />
+    <EmbeddedResource Include="AudibleConvertor\FormBardAccount.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AudibleConvertor\FormBatchEdit.resx" />
+    <EmbeddedResource Include="AudibleConvertor\FormCDripCUE.resx" />
+    <EmbeddedResource Include="AudibleConvertor\FormChapterAligner.resx" />
+    <EmbeddedResource Include="AudibleConvertor\FormChapterNames.resx" />
+    <EmbeddedResource Include="AudibleConvertor\FormDownloadManager.resx" />
+    <EmbeddedResource Include="AudibleConvertor\FormLHR.resx" />
+    <EmbeddedResource Include="AudibleConvertor\FormMetaData.resx" />
+    <EmbeddedResource Include="AudibleConvertor\FormMP3Import.resx" />
+    <EmbeddedResource Include="AudibleConvertor\FormMP3Joiner.resx" />
+    <EmbeddedResource Include="AudibleConvertor\FormOutputPath.resx" />
+    <EmbeddedResource Include="AudibleConvertor\FormOverdrive.resx" />
+    <EmbeddedResource Include="AudibleConvertor\FormRenamer.resx" />
+    <EmbeddedResource Include="AudibleConvertor\FormTagEditor.resx" />
+    <EmbeddedResource Include="AudibleConvertor\FormWizard.resx" />
+    <EmbeddedResource Include="AudibleConvertor\frmAdvancedOptions.resx" />
+    <EmbeddedResource Include="AudibleConvertor\frmCDrip.resx" />
+    <EmbeddedResource Include="AudibleConvertor\frmEditChapters.resx" />
+    <EmbeddedResource Include="AudibleConvertor\frmMetaDataGrid.resx" />
+    <EmbeddedResource Include="AudibleConvertor\Properties\Resources.resx" />
+    <EmbeddedResource Include="CustomControls\Controls\OpenFileDialogEx.resx" />
+    <EmbeddedResource Include="CustomControls\FormOpenFileDialog.resx" />
+    <EmbeddedResource Include="ExtendedComponents\Scroller.resx" />
+    <EmbeddedResource Include="SoundEditor\FormACMCodecs.resx" />
+    <EmbeddedResource Include="SoundEditor\FormBalance.resx" />
+    <EmbeddedResource Include="SoundEditor\FormBassBoost.resx" />
+    <EmbeddedResource Include="SoundEditor\FormBinauralWaveTone.resx" />
+    <EmbeddedResource Include="SoundEditor\FormChooseBackgroundFile.resx" />
+    <EmbeddedResource Include="SoundEditor\FormCompositeWaveTone.resx" />
+    <EmbeddedResource Include="SoundEditor\FormDeClick.resx" />
+    <EmbeddedResource Include="SoundEditor\FormDeHiss.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

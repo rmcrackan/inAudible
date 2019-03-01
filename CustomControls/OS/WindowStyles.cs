@@ -1,0 +1,39 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: CustomControls.OS.WindowStyles
+// Assembly: inAudible, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: F68AEA32-E028-47D6-9B0C-D1B7379EFC06
+// Assembly location: C:\Program Files (x86)\inAudible197\inAudible.exe
+
+namespace CustomControls.OS
+{
+  public enum WindowStyles : long
+  {
+    WS_OVERLAPPED = 0,
+    WS_TILED = 0,
+    WS_MAXIMIZEBOX = 65536,
+    WS_TABSTOP = 65536,
+    WS_GROUP = 131072,
+    WS_MINIMIZEBOX = 131072,
+    WS_SIZEBOX = 262144,
+    WS_THICKFRAME = 262144,
+    WS_SYSMENU = 524288,
+    WS_HSCROLL = 1048576,
+    WS_VSCROLL = 2097152,
+    WS_DLGFRAME = 4194304,
+    WS_BORDER = 8388608,
+    WS_CAPTION = 12582912,
+    WS_OVERLAPPEDWINDOW = 13565952,
+    WS_TILEDWINDOW = 13565952,
+    WS_MAXIMIZE = 16777216,
+    WS_CLIPCHILDREN = 33554432,
+    WS_CLIPSIBLINGS = 67108864,
+    WS_DISABLED = 134217728,
+    WS_VISIBLE = 268435456,
+    WS_ICONIC = 536870912,
+    WS_MINIMIZE = 536870912,
+    WS_CHILD = 1073741824,
+    WS_CHILDWINDOW = 1073741824,
+    WS_POPUP = 2147483648,
+    WS_POPUPWINDOW = 2156396544,
+  }
+}
