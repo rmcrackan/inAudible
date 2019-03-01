@@ -1,5 +1,5 @@
 # inAudible
-Among the ffmpeg library's versitile options is the ability to remove DRM
+Among the ffmpeg library's versatile options is the ability to remove DRM
 from .aa and .aax files. However, command line programs can be intimidating
 and cryptic. inAudible eliminates the intimidation and also adds several
 other features. Unfortunately, inAudible is currently only available on
