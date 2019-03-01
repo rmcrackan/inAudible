@@ -442,5 +442,9 @@
     <EmbeddedResource Include="SoundEditor\FormDeClick.resx" />
     <EmbeddedResource Include="SoundEditor\FormDeHiss.resx" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="_installers\inAudible197.zip" />
+    <None Include="_installers\mac_inAudible009.zip" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
