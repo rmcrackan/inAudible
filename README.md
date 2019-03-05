@@ -1,3 +1,16 @@
+## Update
+This git repo used to include disassembled source code for the Windows
+version of inAudible. The author reached out to me and respectfully and
+clearly expressed that I should remove the source code and that s/he is
+fine with the installer being here. Additionally, the author pointed out
+that "All of the opensource Audible projects on the web (ffmpeg,
+inaudible-ng, etc.) are using code that I created and specifically
+contributed to these projects."
+
+In other words: the most powerful bits of code for removing the DRM are
+still available to all. My thanks to the author for contributing this code
+to the community.
+
 # inAudible
 Among the ffmpeg library's versatile options is the ability to remove DRM
 from .aa and .aax files. However, command line programs can be intimidating
@@ -10,28 +23,12 @@ though it is neither pirated nor illegal. Also, torrenting sites are
 sometimes blocked by work, schools, public hotspots, and internet
 providers. This can make it impossible to obtain inAudible.
 
-This github repository makes available the inAudible install files and its
-full source code.
-
-The installed inAudible (version 1.97) was disassembled using dotPeek and
-compilation errors were manually corrected. Nothing of substance was
-changed.
+This github repository makes available the inAudible install files.
 
 ## Installers
 
-* [Windows installer][windowsInstaller]: This is the original installer which
-was the origin of the source code in this github repository.
-* [Mac installer][macInstaller]: This is NOT from the code here. It is the
-version on torrenting sites. I make no claims about it but it does seem to
-also be a UI wrapper around the ffmpeg library which does the heavy lifting.
-
-## Licensing
-This is a direct technical extract of inAudible as it exists on torrent
-sites. I have taken zero effort to enforce anything about licensing. This
-includes about inAudible itself or about the libraries it uses. If you
-know of anywhere that this library violates someone's licensing or if a
-license should be included, please let me know and I will attempt to
-correct it.
+* [Windows installer][windowsInstaller]: originally from https://www.thepiratebay.org/torrent/18347779/inAudible_1.97_-_Convert_Audible_audiobooks_and_remove_DRM
+* [Mac installer][macInstaller]: originally from https://www.thepiratebay.org/torrent/16437818/inAudible_v0.09
 
   [windowsInstaller]: https://github.com/rmcrackan/inAudible/blob/master/_installers/inAudible197.zip
   [macInstaller]: https://github.com/rmcrackan/inAudible/blob/master/_installers/mac_inAudible009.zip
