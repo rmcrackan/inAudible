@@ -37,26 +37,5 @@
     <None Include="_installers\inAudible197.zip" />
     <None Include="_installers\mac_inAudible009.zip" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="lib\AeroWizard.dll" />
-    <Content Include="lib\AudioSoundEditor.dll" />
-    <Content Include="lib\CUETools.AccurateRip.dll" />
-    <Content Include="lib\CUETools.CDImage.dll" />
-    <Content Include="lib\CUETools.Codecs.dll" />
-    <Content Include="lib\CUETools.Codecs.FLAKE.dll" />
-    <Content Include="lib\CUETools.CTDB.dll" />
-    <Content Include="lib\CUETools.Ripper.dll" />
-    <Content Include="lib\CUETools.Ripper.SCSI.dll" />
-    <Content Include="lib\CustomScrollBar.dll" />
-    <Content Include="lib\DirectShowLib-2005.dll" />
-    <Content Include="lib\INIFileParser.dll" />
-    <Content Include="lib\Microsoft.WindowsAPICodePack.Shell.dll" />
-    <Content Include="lib\Mp4Chapters.dll" />
-    <Content Include="lib\ProgressODoom.dll" />
-    <Content Include="lib\RichTextBoxLinks.dll" />
-    <Content Include="lib\Ripper.dll" />
-    <Content Include="lib\SmartThreadPool.dll" />
-    <Content Include="lib\taglib-sharp.dll" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
