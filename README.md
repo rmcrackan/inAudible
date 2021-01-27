@@ -1,3 +1,5 @@
+## [Download inAudible for Windows or Mac](https://github.com/rmcrackan/inAudible/tree/master/_installers)
+
 ## Update
 This git repo used to include disassembled source code for the Windows
 version of inAudible. The author reached out to me and respectfully and
