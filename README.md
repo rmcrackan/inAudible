@@ -32,5 +32,8 @@ This github repository makes available the inAudible install files.
 * [Windows installer][windowsInstaller]: originally from https://www.thepiratebay.org/torrent/18347779/inAudible_1.97_-_Convert_Audible_audiobooks_and_remove_DRM
 * [Mac installer][macInstaller]: originally from https://www.thepiratebay.org/torrent/16437818/inAudible_v0.09
 
+### If you found this useful, tell a friend. If you found this REALLY useful, you can click here to [PalPal.me](https://paypal.me/mcrackan?locale.x=en_us)
+...or just tell more friends. As long as I'm maintaining this software, it will remain **free** and **open source**.
+
   [windowsInstaller]: https://github.com/rmcrackan/inAudible/blob/master/_installers/inAudible197.zip
   [macInstaller]: https://github.com/rmcrackan/inAudible/blob/master/_installers/mac_inAudible009.zip
