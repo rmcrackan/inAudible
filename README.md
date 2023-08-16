@@ -1,18 +1,5 @@
 ## [Click here to Download inAudible for Windows or Mac](https://github.com/rmcrackan/inAudible/tree/master/_installers)
 
-## Update
-This git repo used to include disassembled source code for the Windows
-version of inAudible. The author reached out to me and respectfully and
-clearly expressed that I should remove the source code and that s/he is
-fine with the installer being here. Additionally, the author pointed out
-that "All of the opensource Audible projects on the web (ffmpeg,
-inaudible-ng, etc.) are using code that I created and specifically
-contributed to these projects."
-
-In other words: the most powerful bits of code for removing the DRM are
-still available to all. My thanks to the author for contributing this code
-to the community.
-
 # inAudible
 Among the ffmpeg library's versatile options is the ability to remove DRM
 from .aa and .aax files. However, command line programs can be intimidating
